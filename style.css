@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+main {
+    width: 99vw;
+    height: 98vh;
+    margin: 6px auto;
+    background-color: blueviolet;
+    outline: 3px solid red;
+    border: 3px solid orange;
+    outline-offset: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: flex-end; */
+}
+
+h1{
+    font-size: 2em;
+    padding: .5em 1em;
+    margin-top: 1em;
+    text-align: center;
+    background-color: rgba(245, 222, 179, 0.145);
+       transition: all 1s;
+}
+
+button {
+    width: 15em;
+    height: 3em;
+    font-size: 1em;
+    color: white;
+           background-color: rgba(255, 255, 255, 0.082);
+    padding: .5em 1em;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    transform: skewX(-10deg);
+            border: 1px solid rgba(255, 255, 255, 0.557);
+    transition: all 1s;
+}
+
+section{
+        background-color: rgba(255, 255, 255, 0.145);
+        padding: 1em;
+        width: 300px;
+        margin-bottom: 1.5em;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.557);
+        
+}
+.colorName{
+    text-align: center;
+    margin-bottom:.5em;
+    font-size:1.3em;
+    font-style: oblique;
+    color: rgba(255, 255, 255, 0.426);
+}
+
+button:hover {
+    background-color: rgba(0, 39, 138, 0.527);
+    transition: all 1;
+    color: white;
+    border: 2px solid white;
+}
+
+@media (max-width: 700px) {
+    h1{
+       font-size: 1.5em;
+    }
+
+    button {
+    width: 12em;
+    font-size: .7em;
+    }
+}
+
+
+@media (max-width: 300px) {
+    h1{
+       font-size: 1em;
+    }
+}
+
